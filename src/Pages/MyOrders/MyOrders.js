@@ -18,7 +18,7 @@ const MyOrders = () => {
     
     return (
         <div className="container">
-            <h2>Here is your interest</h2>
+            <h2>Cheackout your order</h2>
            
             <Row xs={1} md={1} className="g-4">
             {
