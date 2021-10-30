@@ -1,0 +1,12 @@
+.home-service-card{
+    min-height: 500px;
+}
+.home-service-card img{
+    max-height: 270px;
+}
+.booked-btn{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    bottom: 10px;
+}

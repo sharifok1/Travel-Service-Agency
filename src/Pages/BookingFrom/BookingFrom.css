@@ -1,0 +1,26 @@
+.user-form input{
+    width: 80%;
+    margin: 6px;
+    padding: 3px;
+    padding-left:20px ;
+    border-radius: 10px;
+    border:0px;
+    border-bottom:1px solid darkgreen;
+    outline: none;
+}
+.select{
+    width: 80%;
+    margin: 6px;
+    padding: 3px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border:0px;
+    border-bottom:1px solid darkgreen;
+    outline: none;
+}
+.confirmButton{
+    color:darkgreen;
+    font-weight: 500;
+    margin-top: 10px;
+    border:2px solid red;
+}
