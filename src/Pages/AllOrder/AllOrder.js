@@ -11,7 +11,7 @@ const AllOrder = ({allData}) => {
     //status function-------------------------------
     const handleStatus =(condition)=>{
 
-        const url = "http://localhost:7000/order/status"
+        const url = "https://sheltered-brook-76954.herokuapp.com/order/status"
         axios.put(url,{id:_id,status:condition})
         .then(res=>{
             console.log(res);
