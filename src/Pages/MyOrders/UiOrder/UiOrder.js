@@ -1,23 +1,27 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-const UiOrder = ({myOrder}) => {
+
+const UiOrder = ({myOrder,setNumber}) => {
+    console.log(myOrder);
+
     const{firstName,placeImg,placeName,cost,_id}=myOrder;
-
     // handleDelete------------------------------delete order
-    const handleDelete= id =>{
-        console.log(id)
+    
+    const handleDelete = id =>{
 
-        const url = `https://sheltered-brook-76954.herokuapp.com/orders/${id}`;
-        fetch(url , {
+        
+        const url = `https://sheltered-brook-76954.herokuapp.com/orders/${id}`;     
+        fetch( url , {
             method: 'DELETE'
         })
         .then(res=>res.json())
         .then(data =>{
             if(data.acknowledged){
+                setNumber(num=>num+1)
                 alert('Order successfully removed');
             }
-            console.log(data);
+           
             
         })
 
@@ -40,7 +44,18 @@ const UiOrder = ({myOrder}) => {
                     </div>
                 
                     <div className="col-11 col-lg-3 pt-3">
-                        <button className="btn btn-danger m-2 w-100"><small>status:Pending</small></button> <br />
+                        <div className=" btn-danger m-2 w-100 p-2"><small>
+                            {
+                               myOrder?.orderStatus === 'Pending' && <p>status:pending</p>
+                            }
+                            {
+                               myOrder?.orderStatus === 'accepted' && <p>status:Accepted</p>
+                            }
+                            {
+                               myOrder?.orderStatus === 'cancel' && <p>status:Order Cancel</p>
+                            }
+                            
+                            </small></div> <br />
                         <button onClick={()=>handleDelete(_id)} className="btn btn-secondary m-2 w-100">Remove Order</button>
                     </div>
                 </div>

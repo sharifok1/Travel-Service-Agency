@@ -11,6 +11,7 @@ import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import ManageOrder from './Pages/MnageOrder/ManageOrder';
 import MyOrders from './Pages/MyOrders/MyOrders';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           <PrivateRoute path="/BookingFrom/:_id">
             <BookingFrom></BookingFrom>
           </PrivateRoute>
+          <Route>
+            <NotFound></NotFound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </Router>

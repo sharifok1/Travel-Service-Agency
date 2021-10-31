@@ -22,7 +22,9 @@ const BookingFrom = () => {
     //react-hook form
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
+        data.orderStatus='Pending';
         console.log(data);
+        //post method----------------------------post
         axios.post('https://sheltered-brook-76954.herokuapp.com/orders', data)
         .then(res=>{
             if(res.data.insertedId){

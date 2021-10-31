@@ -1,10 +1,23 @@
-import React from 'react';
+
+import axios from 'axios';
 
 import { Card, Col } from 'react-bootstrap';
 
 
 const AllOrder = ({allData}) => {
     const {firstName,_id, placeName }=allData;
+    console.log(allData);
+
+    //status function-------------------------------
+    const handleStatus =(condition)=>{
+
+        const url = "http://localhost:7000/order/status"
+        axios.put(url,{id:_id,status:condition})
+        .then(res=>{
+            console.log(res);
+        })
+        
+    }
     return (
         <div className="mb-3">
             <Col>
@@ -18,8 +31,8 @@ const AllOrder = ({allData}) => {
                         </div>
                        </div>
                        <div className="col-md-6">
-                           <button className="w-50 m-2 btn bg-success text-white">Approve Order</button> <br />
-                           <button className="w-50 m-2 btn bg-danger text-white">Cancel Order</button>
+                           <button onClick={()=>handleStatus('accepted')} className="w-50 m-2 btn bg-success text-white">Approve Order</button> <br />
+                           <button onClick={()=>handleStatus('cancel')} className="w-50 m-2 btn bg-danger text-white">Cancel Order</button>
                        </div>
                     
                    </div>
