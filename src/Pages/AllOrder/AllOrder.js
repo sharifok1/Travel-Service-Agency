@@ -15,6 +15,7 @@ const AllOrder = ({allData}) => {
         axios.put(url,{id:_id,status:condition})
         .then(res=>{
             console.log(res);
+            alert('Status successfully update')
         })
         
     }
