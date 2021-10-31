@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Services from '../Services/Services';
 import "./Home.css";
 
@@ -28,7 +29,13 @@ const Home = () => {
                         ></Services>)
                     }
                </Row>
+               {/* add -------------------------------------offer btn// */}
+               <Link to="/AddedService">
+               <button className="btn btn-success w-25 mt-4">Add a offer</button>
+               </Link>
             </div>
+
+            {/* extra part-------------------------------------------- */}
             <div>
                 <div className="home-background">
                 <h3>Why we are the best?</h3>

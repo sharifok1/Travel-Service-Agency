@@ -17,11 +17,12 @@ const Services = ({data}) => {
                     </Card.Text>
                     <h4>Cost:{price}</h4>
                     <Link to={`/BookingFrom/${_id}`}>
-                    <button className="btn btn-danger booked-btn">Book this offer</button>
+                    <button className="btn btn-warning booked-btn">Book this offer</button>
                     </Link>
                     </Card.Body>
                 </Card>
                 </Col>
+        
         </div>
     );
 };

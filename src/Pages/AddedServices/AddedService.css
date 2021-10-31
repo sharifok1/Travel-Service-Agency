@@ -1,0 +1,11 @@
+.added-form{
+    margin: 50px;
+}
+.added-form input{
+    margin: 5px;
+    padding: 2px;
+    width: 45%;
+}
+.des-field{
+    width: 45%;
+}

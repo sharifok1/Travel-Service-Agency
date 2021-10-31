@@ -17,7 +17,7 @@ const MyOrders = () => {
    
     
     return (
-        <div className="container">
+        <div className="container mb-5">
             <h2>Cheackout your order</h2>
            
             <Row xs={1} md={1} className="g-4">
