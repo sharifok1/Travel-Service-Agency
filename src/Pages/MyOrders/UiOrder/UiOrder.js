@@ -21,8 +21,6 @@ const UiOrder = ({myOrder,setNumber}) => {
                 setNumber(num=>num+1)
                 alert('Order successfully removed');
             }
-           
-            
         })
 
     }

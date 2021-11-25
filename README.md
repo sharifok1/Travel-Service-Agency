@@ -5,7 +5,9 @@ BD travel agency is a travel services holder.. Any one can book ruuning travel o
 
 - Recent travel offer 
 - User can climed any offer by clicking book offer button
-- For confirm  any offer a form ready for user
+- User Signin Login implementation
+- Fireabase Authentication
+- User Order confirmation form
 - User can remove any order if wanted
 - still user can change her order by canceling previous order
 - for more information user can read blog option
