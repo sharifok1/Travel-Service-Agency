@@ -2,15 +2,20 @@
 ==================================
 
 BD travel agency is a travel services holder.. Any one can book ruuning travel offer from BDtravel Ageency .. By this site I provided--
-
-- Recent travel offer 
+## Useges Technology 
+- HTML, CSS
+- boostrap
+- React , MongoDB, Firebase, React Hook,
+## Project featurs
+- Context API, Firebase login Autentication
 - User can climed any offer by clicking book offer button
-- User Signin Login implementation
-- Fireabase Authentication
+- Show service, Add Service, Delete Service, Manage Order
+- semantic code
+- component based work
 - User Order confirmation form
 - User can remove any order if wanted
 - still user can change her order by canceling previous order
-- for more information user can read blog option
+
 
 
 ## Live site link is
