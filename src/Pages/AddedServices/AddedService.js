@@ -13,7 +13,7 @@ const AddedService = () => {
         }
     return (
         <div className="added-form">
-            <h2>This is added order</h2>
+            <h2>Only Admin can Add a product</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name")} placeholder="enter service name"/> <br />
                 <input {...register("price")}placeholder="enter trip cost" /> <br />
