@@ -79,7 +79,7 @@ const Home = () => {
                </Row>
                {/* add -------------------------------------offer btn// */}
                <Link to="/AddedService">
-               <button className="btn btn-success w-25 mt-4">Add a offer</button>
+               <button className="btn btn-success w-25 mt-4" disabled>Add a offer</button>
                </Link>
             </div>
 
