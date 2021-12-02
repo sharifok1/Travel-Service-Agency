@@ -21,7 +21,7 @@ const AddedService = () => {
                 <input {...register("time")} placeholder="travel days"/> <br />
                 <textarea className="des-field" {...register("des")} placeholder="write description"/> <br />
                 
-                <input type="submit" />
+                <input type="submit" disabled/>
                 </form>
         </div>
     );
